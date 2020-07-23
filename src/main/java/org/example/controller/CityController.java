@@ -51,7 +51,6 @@ public class CityController {
     }
 
     private CityEntity getCityById(long id){
-        System.out.println(cityRepository.findFirstById(id));
         return cityRepository.findFirstById(id);
     }
 }
