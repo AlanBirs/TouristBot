@@ -27,10 +27,7 @@ public class CityController {
 
     @PostMapping
     public CityEntity create(@RequestBody CityEntity cityEntity){
-        CityEntity lastCity = cityRepository.findFirstByOrderByIdDesc();
-        cityEntity.setId(lastCity.getId() + 1);
         cityRepository.save(cityEntity);
-
         return cityEntity;
     }
 
