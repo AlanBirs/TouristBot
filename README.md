@@ -1,4 +1,4 @@
-# EvilTouristBot
+TouristBot
 
 Для запуска бота:
 1) Postgres (название базы данных в application.properties)
